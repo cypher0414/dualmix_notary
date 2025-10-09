@@ -1,0 +1,104 @@
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 40px;
+}
+
+.container {
+  max-width: 600px;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 2rem;
+}
+
+.tagline {
+  text-align: center;
+  opacity: 0.8;
+  margin-bottom: 30px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+textarea, input[type="text"], input[type="file"] {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+textarea {
+  height: 80px;
+  resize: vertical;
+}
+
+.btn {
+  background: #00b4d8;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #0096c7;
+}
+
+.btn.outline {
+  background: transparent;
+  border: 2px solid #00b4d8;
+}
+
+.btn.outline:hover {
+  background: #00b4d8;
+}
+
+.btn.danger {
+  background: #e63946;
+}
+
+.btn.danger:hover {
+  background: #c82333;
+}
+
+.output, .records {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  color: #f1faee;
+}
+
+.hidden {
+  display: none;
+}
+
+.record-actions {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}

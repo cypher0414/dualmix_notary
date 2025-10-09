@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DualMix Notary — Secure</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🔐 DualMix Notary</h1>
+    <p class="tagline">Secure your digital records with dual-layer hashing</p>
+
+    <div id="authSection" class="card">
+      <button id="registerBtn" class="btn">Register</button>
+      <button id="loginBtn" class="btn outline">Login</button>
+      <p id="authStatus">Not authenticated.</p>
+    </div>
+
+    <div id="app" class="card hidden">
+      <h2>Create Record</h2>
+      <textarea id="inputText" placeholder="Enter text..."></textarea>
+      <input type="file" id="fileInput">
+      <input type="text" id="pepper" placeholder="Optional pepper">
+      <button id="createBtn" class="btn">Create Notarized Hash</button>
+      <p id="output" class="output"></p>
+
+      <h2>Verify Record</h2>
+      <textarea id="verifyText" placeholder="Enter text to verify..."></textarea>
+      <input type="file" id="verifyFile">
+      <input type="text" id="verifyPepper" placeholder="Pepper used (if any)">
+      <button id="verifyBtn" class="btn">Verify Against Records</button>
+      <p id="verifyOutput" class="output"></p>
+
+      <h2>Records</h2>
+      <div class="record-actions">
+        <button id="showBtn" class="btn">Show Records</button>
+        <button id="exportBtn" class="btn outline">Export JSON</button>
+        <button id="clearBtn" class="btn danger">Clear All</button>
+      </div>
+      <pre id="records" class="records"></pre>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
